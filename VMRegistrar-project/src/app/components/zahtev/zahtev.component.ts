@@ -18,25 +18,48 @@ export class ZahtevComponent implements OnInit {
   public dan!: string;
   public mesec!: string;
   public godina!: string;
+  public poruka!: string;
 
 
 
   constructor(public terminService: TerminService,
     public zahtevService: ZahtevService,
     public router: Router,
-    private stateService: StateService) { }
+    private stateService: StateService
+    ) { }
 
   ngOnInit(): void {
     this.terminIzmena = this.stateService.termin;
   }
 
   proveraRaspolozivosti() {
-
+    this.terminIzmena.datum = this.dan + '.' + this.mesec + '.' + this.godina + '.';
+    // Provera da li je unet datum posle danasnjeg dana 
+    const d = new Date();
+    if(parseInt(this.godina) <= d.getFullYear()) {
+      if(parseInt(this.mesec) < d.getMonth()) {
+        this.poruka = "Greška! Uneli ste neispravan datum!";
+      }else if(parseInt(this.mesec) == d.getMonth() && parseInt(this.dan) <= d.getDate()){
+        this.poruka = "Greška! Uneli ste neispravan datum!";
+      }else {
+        this.poruka = "";
+        
+        
+      }
+      
+    }
+    else{
+      this.poruka = "";
+    }
+    console.log(this.godina + d.getFullYear());
+    console.log(this.mesec + d.getMonth());
+    console.log(this.dan + d.getDate());
+  console.log(this.poruka);
   }
   
   add() {
-    this.terminIzmena.datum = this.dan + '.' + this.mesec + '.' + this.godina + '.';
-    // Provera da li je unet datum posle danasnjeg dana 
+    
+    
     this.zahtevService.addZahtev(this.zahtevNovi).subscribe(()  => {
       console.log("proba");
     })

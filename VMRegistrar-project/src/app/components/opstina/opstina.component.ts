@@ -12,7 +12,6 @@ import { TerminService } from 'src/app/services/termin.service';
 export class OpstinaComponent implements OnInit {
 
   public terminNovi = new Termin();
-
   constructor( public terminService: TerminService,
     public router: Router,
     private stateService: StateService) { }

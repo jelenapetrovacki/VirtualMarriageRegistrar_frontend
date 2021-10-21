@@ -30,9 +30,9 @@
   <body class="u-body"><header class="u-border-2 u-border-grey-75 u-clearfix u-header u-palette-1-dark-2 u-header" id="sec-ea0a"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-left u-large-text u-text u-text-grey-15 u-text-variant u-text-1">VIRTUELNI MATIČAR&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MATIČNOG PODRUČJA<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </p>
-        <img class="u-image u-image-default u-image-1" alt="" data-image-width="820" data-image-height="838" src="images/opstina.png">
+        <img class="u-image u-image-default u-image-1" alt="" data-image-width="820" data-image-height="838" src="assets/prsten.png">
         <p class="u-text u-text-2">{{terminIzmena.opstina}}</p>
-        <img class="u-image u-image-default u-image-2" alt="" data-image-width="820" data-image-height="838" src="images/opstina.png">
+        <img class="u-image u-image-default u-image-2" alt="" data-image-width="820" data-image-height="838" src="assets/zastava.png">
       </div></header>
     <section class="u-clearfix u-valign-bottom u-section-1" id="carousel_2b3c">
       <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -104,15 +104,15 @@
                               <label for="select-3565" class="u-label">Dan</label>
                               <div class="u-form-select-wrapper">
                                 <select id="select-3565" name="dan" ngDefaultControl [(ngModel)] = "dan" style="width: 100px !important; min-width: 100px; max-width: 100px;"  class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
-                                  <option value="01">01</option>
-                                  <option value="02">02</option>
-                                  <option value="03">03</option>
-                                  <option value="04">04</option>
-                                  <option value="05">05</option>
-                                  <option value="06">06</option>
-                                  <option value="07">07</option>
-                                  <option value="08">08</option>
-                                  <option value="09">09</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
                                   <option value="10">10</option>
                                   <option value="11">11</option>
                                   <option value="12">12</option>
@@ -143,15 +143,15 @@
                               <label for="select-7a6c" class="u-label">Mesec</label>
                               <div class="u-form-select-wrapper">
                                 <select id="select-7a6c" name="mesec" ngDefaultControl [(ngModel)] = "mesec" style="width: 100px !important; min-width: 100px; max-width: 100px;" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
-                                  <option value="01">01</option>
-                                  <option value="02">02</option>
-                                  <option value="03">03</option>
-                                  <option value="04">04</option>
-                                  <option value="05">05</option>
-                                  <option value="06">06</option>
-                                  <option value="07">07</option>
-                                  <option value="08">08</option>
-                                  <option value="09">09</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
                                   <option value="10">10</option>
                                   <option value="11">11</option>
                                   <option value="12">12</option>
@@ -198,16 +198,15 @@
                               </div>
                             </div>
 
-                            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                            <input type="hidden" value="" name="recaptchaResponse">
+                           
                           </form>
                         </div>
+                        <p style="color: red;">{{poruka}}</p>
                         <button (click)= "proveraRaspolozivosti()" class="u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-palette-2-base u-radius-50 u-btn-6">proveri<br>&nbsp;raspoloživost
                         </button>
                       </div>
                     </div>
-                    <button (click) = "add()" class="u-border-2 u-border-palette-1-dark-2 u-btn u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-75 u-palette-1-dark-2 u-btn-7">potvrdi podatke</button>
+                    <button (click) = "add()" disabled id="btnPotvrdi" class="u-border-2 u-border-palette-1-dark-2 u-btn u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-75 u-palette-1-dark-2 u-btn-7">potvrdi podatke</button>
                   </div>
                 </div>
               </div>
