@@ -31,7 +31,7 @@
         <p class="u-align-left u-large-text u-text u-text-grey-15 u-text-variant u-text-1">VIRTUELNI MATIČAR&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MATIČNOG PODRUČJA<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </p>
         <img class="u-image u-image-default u-image-1" alt="" data-image-width="820" data-image-height="838" src="images/opstina.png">
-        <p class="u-text u-text-2">ovde opstina</p>
+        <p class="u-text u-text-2">{{terminIzmena.opstina}}</p>
         <img class="u-image u-image-default u-image-2" alt="" data-image-width="820" data-image-height="838" src="images/opstina.png">
       </div></header>
     <section class="u-clearfix u-valign-bottom u-section-1" id="carousel_2b3c">
@@ -56,14 +56,10 @@
                           <input type="email" placeholder="Unesite broj lične karte drugog svedoka" id="email-fc5d" name="brLkSvedoka2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
                         </div>
                       
-                        <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                        <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                        <input type="hidden" value="" name="recaptchaResponse">
+                      
                       </form>
                     </div>
-                    <p class="u-text u-text-2">Odaberite usl<span style="font-weight: 700;">
-                        <span style="font-weight: 400;"></span>
-                      </span>ugu:
+                    <p class="u-text u-text-2">Odaberite uslugu:
                     </p>
                     <div class="u-form u-form-2">
                       <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form-1">
@@ -72,17 +68,13 @@
                         <div class="u-form-group u-form-select u-form-group-4">
                           <label for="select-3e8e" class="u-form-control-hidden u-label">Select</label>
                           <div class="u-form-select-wrapper">
-                            <select id="select-3e8e" name="izlazakMaticara" ngDefaultControl [(ngModel)] = "zahtevNovi.izlazMaticara" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                            <select id="select-3e8e" placeholder="Mesto venčanja" name="izlazakMaticara" ngDefaultControl [(ngModel)] = "zahtevNovi.izlazMaticara" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
                               <option value=false>Venčanje u opštinskoj sali za venčavanje</option>
                               <option value=true>Venčanje u sali za svadbe</option>
                             </select>
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
                           </div>
                         </div>
-                     
-                        <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                        <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                        <input type="hidden" value="" name="recaptchaResponse">
                       </form>
                     </div>
                     <p class="u-text u-text-3">*Ako se građansko venčanje održi u<b> sali za venčavanje</b> u opštini, mladenci plaćaju samo republičku administrativnu taksu koja<b> iznosi 300 dinara</b>,&nbsp;​a<b> izlazak matičara na teren iznosi&nbsp;12 515 dinara.</b>
@@ -96,9 +88,6 @@
                           <textarea rows="4" cols="50" id="textarea-5d52" name="mestoOdrzavanjaSvadbe" ngDefaultControl [(ngModel)] = "zahtevNovi.adresa"  class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"></textarea>
                         </div>
                         
-                        <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                        <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                        <input type="hidden" value="" name="recaptchaResponse">
                       </form>
                     </div>
                     <p class="u-text u-text-4">*Popunjava se u slučaju da je<b> odabran izlazak matičara</b> na teren<b>.</b>
@@ -114,7 +103,7 @@
                             <div class="u-form-group u-form-select u-form-group-8">
                               <label for="select-3565" class="u-label">Dan</label>
                               <div class="u-form-select-wrapper">
-                                <select id="select-3565" name="dan" ngDefaultControl [(ngModel)] = "dan" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                                <select id="select-3565" name="dan" ngDefaultControl [(ngModel)] = "dan" style="width: 100px !important; min-width: 100px; max-width: 100px;"  class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
                                   <option value="01">01</option>
                                   <option value="02">02</option>
                                   <option value="03">03</option>
@@ -153,7 +142,7 @@
                             <div class="u-form-group u-form-select u-vertical-form-control-visible u-form-group-9">
                               <label for="select-7a6c" class="u-label">Mesec</label>
                               <div class="u-form-select-wrapper">
-                                <select id="select-7a6c" name="mesec" ngDefaultControl [(ngModel)] = "mesec" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                                <select id="select-7a6c" name="mesec" ngDefaultControl [(ngModel)] = "mesec" style="width: 100px !important; min-width: 100px; max-width: 100px;" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
                                   <option value="01">01</option>
                                   <option value="02">02</option>
                                   <option value="03">03</option>
@@ -173,7 +162,7 @@
                             <div class="u-form-group u-form-select u-vertical-form-control-visible u-form-group-10">
                               <label for="select-5f65" class="u-label">Godina</label>
                               <div class="u-form-select-wrapper">
-                                <select id="select-5f65" name="godina" ngDefaultControl [(ngModel)] = "godina" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                                <select id="select-5f65" name="godina" ngDefaultControl [(ngModel)] = "godina" style="width: 100px !important; min-width: 100px; max-width: 100px;"  class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
                                   <option value="2021">2021</option>
                                   <option value="2022">2022</option>
                                 </select>
@@ -181,9 +170,7 @@
                               </div>
                             </div>
                             
-                            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                            <input type="hidden" value="" name="recaptchaResponse">
+                           
                           </form>
                         </div>
                         <p class="u-align-left u-text u-text-7">Odaberite vreme koji želite:</p>

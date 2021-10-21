@@ -2,9 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Ispis } from 'src/app/models/ispis.model';
 import { Muz } from 'src/app/models/muz';
+import { Termin } from 'src/app/models/termin';
 import { Unos } from 'src/app/models/unos.model';
 import { Zena } from 'src/app/models/zena';
 import { MuzService } from 'src/app/services/muz.service';
+import { StateService } from 'src/app/services/state.service';
 import { ZenaService } from 'src/app/services/zena.service';
 
 
@@ -23,17 +25,22 @@ export class SupruzniciComponent implements OnInit {
   ispis!: Ispis;
   greska: string = "";
   potvrda: string = "";
+
+  terminPreuzet = new Termin();
   
   constructor(public muzService: MuzService,
     public zenaService: ZenaService,
-    public router: Router) { }
+    public router: Router,
+    private stateService: StateService) { }
 
   ngOnInit(): void {
+    this.terminPreuzet = this.stateService.termin;
+    this.stateService.termin = this.terminPreuzet;
   }
 
   add() {
-    this.jmbgProvera(new Unos(this.zenaNova.ime, this.zenaNova.prz, this.zenaNova.jmbg));
-    this.jmbgProvera(new Unos(this.muzNovi.ime, this.muzNovi.prz, this.muzNovi.jmbg));
+   // this.jmbgProvera(new Unos(this.zenaNova.ime, this.zenaNova.prz, this.zenaNova.jmbg));
+   // this.jmbgProvera(new Unos(this.muzNovi.ime, this.muzNovi.prz, this.muzNovi.jmbg));
     
     this.muzService.addMuz(this.muzNovi).subscribe(()  => {
       console.log("proba Muz");

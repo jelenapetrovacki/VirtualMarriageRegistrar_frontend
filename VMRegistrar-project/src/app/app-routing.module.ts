@@ -9,7 +9,9 @@ const routes: Routes = [
   {path: 'pocetna', component: OpstinaComponent},
   {path: 'supruznici', component: SupruzniciComponent},
   {path: 'zahtev', component: ZahtevComponent}
- // {path: '', redirectTo: '/pocetna', pathMatch: 'full'}
+ 
+  //{path: '#tab-eafc', component: SupruzniciComponent},
+ // {path: '', redirectTo: '/supruznici', pathMatch: 'full'}
 
 
 ];

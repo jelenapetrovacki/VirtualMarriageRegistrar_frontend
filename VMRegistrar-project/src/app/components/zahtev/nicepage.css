@@ -5520,7 +5520,7 @@ a {
   border-radius: 4px;
 }
 .u-input-rectangle {
-  border-radius: 0;
+  border-radius: 0px;
 }
 .u-form-select-wrapper {
   position: relative;
@@ -5539,6 +5539,7 @@ a {
 }
 .u-form-select-wrapper select[size] ~ .u-caret {
   display: none;
+
 }
 *,
 *:before,
