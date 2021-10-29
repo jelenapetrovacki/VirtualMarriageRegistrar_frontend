@@ -12,7 +12,7 @@ export class TerminService {
   constructor(private httpClient: HttpClient) { }
 
   public addTermin(termin: Termin) : Observable<any> {
-    termin.id = 0;
+    termin.id = 1;
     return this.httpClient.post(`${TERMIN_URL}`, termin);
   }
   public updateTermin(termin: Termin) : Observable<any> {

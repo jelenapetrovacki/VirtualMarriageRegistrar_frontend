@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -9,11 +8,12 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Druga stranica</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="supruznici.component.css" media="screen">
+    <link rel="stylesheet" href="supruznici.component.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.16.1, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
     
     
     <script type="application/ld+json">{
@@ -31,105 +31,115 @@
   <body class="u-body"><header class="u-border-2 u-border-grey-75 u-clearfix u-header u-palette-1-dark-2 u-header" id="sec-ea0a"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-left u-large-text u-text u-text-grey-15 u-text-variant u-text-1">VIRTUELNI MATIČAR&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MATIČNOG PODRUČJA<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         </p>
-        <img class="u-image u-image-default u-image-1" alt="" data-image-width="820" data-image-height="838" src="images/opstina.png">
+        <img class="u-image u-image-default u-image-1" alt="" data-image-width="820" data-image-height="838" src="assets/prsten.png">
         <p class="u-text u-text-2">{{terminPreuzet.opstina}}</p>
-        <img class="u-image u-image-default u-image-2" alt="" data-image-width="820" data-image-height="838" src="images/opstina.png">
+        <img class="u-image u-image-default u-image-2" alt="" data-image-width="820" data-image-height="838" src="assets/zastava.png">
       </div></header> 
     <section class="u-border-2 u-border-grey-75 u-clearfix u-grey-30 u-section-1" id="sec-a04f">
       <div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-text u-text-black u-text-1">Označite odgovarajuću karticu i popunite tražene podatke.</p>
-        <div class="u-expanded-width u-tab-links-align-left u-tabs u-tabs-1">
-          <ul class="u-spacing-5 u-tab-list u-unstyled" role="tablist">
-            <li class="u-tab-item u-tab-item-1" role="presentation">
-              <a class="active u-active-palette-5-dark-2 u-button-style u-grey-40 u-hover-palette-1-light-2 u-tab-link u-text-active-grey-5 u-text-grey-90 u-text-hover-palette-4-dark-3 u-tab-link-1" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="true">Oba supružnika su&nbsp;državljani<br>&nbsp;Republike&nbsp;Srbije
-              </a>
-            </li>
-            <li class="u-tab-item u-tab-item-2" role="presentation">
-              <a class="u-active-palette-5-dark-2 u-button-style u-grey-40 u-hover-palette-1-light-2 u-tab-link u-text-active-grey-5 u-text-grey-90 u-text-hover-palette-4-dark-3 u-tab-link-2" id="link-tab-eafc" href="#tab-eafc" role="tab" aria-controls="tab-eafc" aria-selected="false">Žena nije&nbsp;državljanin&nbsp;<br>Republike&nbsp;Srbije
-              </a>
-            </li>
-            <li class="u-tab-item" role="presentation">
-              <a class="u-active-palette-5-dark-2 u-button-style u-grey-40 u-hover-palette-1-light-2 u-tab-link u-text-active-grey-5 u-text-grey-90 u-text-hover-palette-4-dark-3 u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">Muž nije&nbsp;državljanin&nbsp;<br>Republike&nbsp;Srbije
-              </a>
-            </li>
-            <li class="u-tab-item u-tab-item-4" role="presentation">
-              <a class="u-active-palette-5-dark-2 u-button-style u-grey-40 u-hover-palette-1-light-2 u-tab-link u-text-active-grey-5 u-text-grey-90 u-text-hover-palette-4-dark-3 u-tab-link-4" id="tab-6e5a" href="#link-tab-6e5a" role="tab" aria-controls="link-tab-6e5a" aria-selected="false">Niko od supružnika nije<br>državljanin Republike&nbsp;Srbije&nbsp;
-              </a>
-            </li>
-          </ul>
+        <div class="u-form u-form-1">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form-2">
+            <input type="hidden" id="siteId" name="siteId" value="21711390">
+            <input type="hidden" id="pageId" name="pageId" value="1858212703">
+            <div class="u-form-group u-form-radiobutton u-form-group-1">
+              <div class="u-form-radio-button-wrapper" id="izabranTabId" name="izabranTab" ngDefaultControl [(ngModel)] = "izabranRadioButton">
+                <input type="radio"  name="izabranTab" id="supruzniciDrzavljani" value="supruzniciDrzavljani">
+                <label class="u-label u-text-grey-90 u-label-1" for="radiobutton"> Oba supružnika su državljani Republike Srbije</label>
+                <br>
+                <input type="radio" name="izabranTab" id="zenaNijeDrzavljanin" value="zenaNijeDrzavljanin">
+                <label class="u-label u-text-grey-90 u-label-2" for="radiobutton"> Žena nije državljanin Republike Srbije</label>
+                <br>
+                <input type="radio" name="izabranTab" id="muzNijeDrzavljanin" value="muzNijeDrzavljanin">
+                <label class="u-label u-text-grey-90 u-label-3" for="radiobutton"> Muž nije državljanin Republike Srbije</label>
+                <br>
+                <input type="radio" name="izabranTab" id="nikoNijeDrzavljanin" value="nikoNijeDrzavljanin">
+                <label class="u-label u-text-grey-90 u-label-4" for="radiobutton"> Niko od supružnika nije državljanin Republike Srbije</label>
+                <br>
+              </div>
+              <button id="hideDiv" (click)="hideDiv()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-6">Potvrdi</button>
+            </div>
+          </form>
+        </div>
           <div class="u-tab-content">
-            <div class="u-align-left u-container-style u-grey-5 u-tab-active u-tab-pane u-tab-pane-1" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+            <div style='visibility: hidden;'class="u-align-left u-container-style u-grey-5 u-tab-active u-tab-pane u-tab-pane-1" id="supruzniciDrzavljaniTab" role="tabpanel" aria-labelledby="link-tab-14b7">
               <div class="u-container-layout u-container-layout-1">
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
                 <h5 class="u-align-center u-text u-text-grey-90 u-text-2">Lični podaci - ŽENA</h5>
                 <h5 class="u-align-center u-text u-text-grey-90 u-text-3">Lični podaci - MUŽ</h5>
-                <div class="u-form u-form-1">
+                <div class="u-form u-form-2">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                     <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-1">Ime</label>
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-5">Ime</label>
                       <input type="text" placeholder="Unesite ime ženske osobe" id="name-7db1" name="imeZ" ngDefaultControl [(ngModel)] = "zenaNova.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-2">Prezime</label>
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-6">Prezime</label>
                       <input type="text" placeholder="Unesite trenutno prezime ženske osobe" id="email-7db1" name="przZ" ngDefaultControl [(ngModel)] = "zenaNova.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-3">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-3">Datum rođenja</label>
+                    <div class="u-form-group u-form-group-5">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-7">Datum rođenja</label>
                       <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-4">
-                      <label for="text-6384" class="u-label u-text-grey-90 u-label-4">Broj lične karte</label>
-                      <input type="text" placeholder="Unesite broj lične karte" id="text-6384" name="br_licnekarteZ"  ngDefaultControl [(ngModel)] = "zenaNova.brLicnekarte" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-6">
+                      <label for="text-6384" class="u-label u-text-grey-90 u-label-8">Broj lične karte</label>
+                      <input type="text" placeholder="Unesite broj lične karte" id="text-6384" name="br_licnekarteZ" ngDefaultControl [(ngModel)] = "zenaNova.brLicnekarte" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-5">
-                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-5">Jedinstveni matični broj građana (JMBG)</label>
-                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgZ"  ngDefaultControl [(ngModel)] = "zenaNova.jmbg" class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
+                    <div class="u-form-group u-form-group-7">
+                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-9">Jedinstveni matični broj građana (JMBG)</label>
+                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgZ" ngDefaultControl [(ngModel)] = "zenaNova.jmbg" class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
                     </div>
-                    <div class="u-form-email u-form-group u-form-group-6">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-6">Mejl adresa</label>
-                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ"  ngDefaultControl [(ngModel)] = "zenaNova.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-email u-form-group u-form-group-8">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-10">Mejl adresa</label>
+                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ" ngDefaultControl [(ngModel)] = "zenaNova.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-phone u-form-group-7">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-7">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ"  ngDefaultControl [(ngModel)] = "zenaNova.telefon" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-phone u-form-group-9">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-11">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ" ngDefaultControl [(ngModel)] = "zenaNova.telefon" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    
+                    <div class="u-align-left u-form-group u-form-submit">
+                      <a href="#" style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-2">Submit</a>
+                      <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
                     <div class="u-form-send-message u-form-send-success"></div>
                     <div class="u-form-send-error u-form-send-message"></div>
                     <input type="hidden" value="" name="recaptchaResponse">
                   </form>
                 </div>
-                <div class="u-form u-form-2">
+                <div class="u-form u-form-3">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                     <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-8">Ime</label>
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-12">Ime</label>
                       <input type="text" placeholder="Unesite ime muške osobe" id="name-7db1" name="imeM" ngDefaultControl [(ngModel)] = "muzNovi.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-9">Prezime</label>
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-13">Prezime</label>
                       <input type="text" placeholder="Unesite prezime muške osobe" id="email-7db1" name="przM" ngDefaultControl [(ngModel)] = "muzNovi.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-11">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-10">Datum rođenja</label>
+                    <div class="u-form-group u-form-group-13">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-14">Datum rođenja</label>
                       <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-12">
-                      <label for="text-6384" class="u-label u-text-grey-90 u-label-11">Broj lične karte</label>
+                    <div class="u-form-group u-form-group-14">
+                      <label for="text-6384" class="u-label u-text-grey-90 u-label-15">Broj lične karte</label>
                       <input type="text" placeholder="Unesite broj lične karte" id="text-6384" name="br_licnekarteM" ngDefaultControl [(ngModel)] = "muzNovi.brLicnekarte" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-13">
-                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-12">Jedinstveni matični broj građana (JMBG)</label>
-                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgM" ngDefaultControl [(ngModel)] = "muzNovi.jmbg"  class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
+                    <div class="u-form-group u-form-group-15">
+                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-16">Jedinstveni matični broj građana (JMBG)</label>
+                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgM" ngDefaultControl [(ngModel)] = "muzNovi.jmbg" class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
                     </div>
-                    <div class="u-form-email u-form-group u-form-group-14">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-13">Mejl adresa</label>
+                    <div class="u-form-email u-form-group u-form-group-16">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-17">Mejl adresa</label>
                       <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailM" ngDefaultControl [(ngModel)] = "muzNovi.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-phone u-form-group-15">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-14">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM"   ngDefaultControl [(ngModel)] = "muzNovi.telefon" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-phone u-form-group-17">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-18">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM"  ngDefaultControl [(ngModel)] = "muzNovi.telefon" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                   
+                    <div class="u-align-left u-form-group u-form-submit">
+                      <a href="#"  style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-3">Submit</a>
+                      <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
                     <div class="u-form-send-message u-form-send-success"></div>
                     <div class="u-form-send-error u-form-send-message"></div>
                     <input type="hidden" value="" name="recaptchaResponse">
@@ -138,46 +148,46 @@
                 <div class="u-border-3 u-border-grey-dark-1 u-line u-line-vertical u-line-2"></div>
                 <p class="u-align-center u-text u-text-4">Učitajte očitanu ili skeniranu ličnu kartu:</p>
                 <p class="u-align-center u-text u-text-5">Učitajte očitanu ili skeniranu ličnu kartu:</p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-3">lična karta</a>
                 <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-4">lična karta</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-5">lična karta</a>
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-3"></div>
-                <button (click)="add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-5">POTVRDI UNETE&nbsp;<br>PODATKE<br>
-                </button>
+                <button (click)="add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-32">POTVRDI UNETE&nbsp;<br>PODATKE<br> </button>
+
               </div>
             </div>
-            <div class="u-align-left u-container-style u-grey-5 u-tab-pane u-tab-pane-2" id="tab-eafc" role="tabpanel" aria-labelledby="link-tab-eafc">
+            <div style='visibility: hidden;' class="u-align-left u-container-style u-grey-5 u-tab-pane u-tab-pane-2" id="zenaNijeDrzavljaninTab" role="tabpanel" aria-labelledby="link-tab-eafc">
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-4"></div>
                 <h5 class="u-text u-text-grey-90 u-text-6">Lični podaci - ŽENA</h5>
                 <h5 class="u-text u-text-grey-90 u-text-7">Lični podaci - MUŽ</h5>
-                <div class="u-form u-form-3">
+                <div class="u-form u-form-4">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                     <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-15">Ime</label>
-                      <input type="text" placeholder="Unesite ime ženske osobe" id="name-7db1" name="imeZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-19">Ime</label>
+                      <input type="text" placeholder="Unesite ime ženske osobe" id="name-7db1" name="imeZ" ngDefaultControl [(ngModel)] = "zenaNova.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-16">Prezime</label>
-                      <input type="text" placeholder="Unesite trenutno prezime ženske osobe" id="email-7db1" name="przZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-20">Prezime</label>
+                      <input type="text" placeholder="Unesite trenutno prezime ženske osobe" id="email-7db1" name="przZ" ngDefaultControl [(ngModel)] = "zenaNova.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-19">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-17">Datum rođenja</label>
+                    <div class="u-form-group u-form-group-21">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-21">Datum rođenja</label>
                       <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-email u-form-group u-form-group-20">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-18">Mejl adresa</label>
-                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-email u-form-group u-form-group-22">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-22">Mejl adresa</label>
+                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ" ngDefaultControl [(ngModel)] = "zenaNova.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-phone u-form-group-21">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-19">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-phone u-form-group-23">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-23">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ngDefaultControl [(ngModel)] = "zenaNova.telefon" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-22">
-                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-20">Broj pasoša</label>
-                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-24">
+                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-24">Broj pasoša</label>
+                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaZ" ngDefaultControl [(ngModel)] = "zenaNova.brojPasosa" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-6">Submit</a>
+                      <a href="#" style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-7">Submit</a>
                       <input type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"></div>
@@ -185,38 +195,38 @@
                     <input type="hidden" value="" name="recaptchaResponse">
                   </form>
                 </div>
-                <div class="u-form u-form-4">
+                <div class="u-form u-form-5">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                     <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-21">Ime</label>
-                      <input type="text" placeholder="Unesite ime muške osobe" id="name-7db1" name="imeM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-25">Ime</label>
+                      <input type="text" placeholder="Unesite ime muške osobe" id="name-7db1" name="imeM" ngDefaultControl [(ngModel)] = "muzNovi.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-22">Prezime</label>
-                      <input type="text" placeholder="Unesite prezime muške osobe" id="email-7db1" name="przM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-form-group u-form-group-26">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-23">Datum rođenja</label>
-                      <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-form-group u-form-group-27">
-                      <label for="text-6384" class="u-label u-text-grey-90 u-label-24">Broj lične karte</label>
-                      <input type="text" placeholder="Unesite broj lične karte" id="text-6384" name="br_licnekarteM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-26">Prezime</label>
+                      <input type="text" placeholder="Unesite prezime muške osobe" id="email-7db1" name="przM" ngDefaultControl [(ngModel)] = "muzNovi.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group u-form-group-28">
-                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-25">Jedinstveni matični broj građana (JMBG)</label>
-                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgM" class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-27">Datum rođenja</label>
+                      <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaM" ngDefaultControl [(ngModel)] = "muzNovi.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-email u-form-group u-form-group-29">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-26">Mejl adresa</label>
-                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-29">
+                      <label for="text-6384" class="u-label u-text-grey-90 u-label-28">Broj lične karte</label>
+                      <input type="text" placeholder="Unesite broj lične karte" id="text-6384" name="br_licnekarteM" ngDefaultControl [(ngModel)] = "muzNovi.brLicnekarte" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-phone u-form-group-30">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-27">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-30">
+                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-29">Jedinstveni matični broj građana (JMBG)</label>
+                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgM" ngDefaultControl [(ngModel)] = "muzNovi.jmbg"  class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
+                    </div>
+                    <div class="u-form-email u-form-group u-form-group-31">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-30">Mejl adresa</label>
+                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailM" ngDefaultControl [(ngModel)] = "muzNovi.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    </div>
+                    <div class="u-form-group u-form-phone u-form-group-32">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-31">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ngDefaultControl [(ngModel)] = "muzNovi.telefon" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-7">Submit</a>
+                      <a href="#" style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-8">Submit</a>
                       <input type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"></div>
@@ -226,31 +236,30 @@
                 </div>
                 <div class="u-border-3 u-border-grey-dark-1 u-line u-line-vertical u-line-5"></div>
                 <p class="u-text u-text-8">Učitajte skeniranu prvu stranicu pasoša:</p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-8">Pasoš</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-9">Pasoš</a>
                 <p class="u-text u-text-9">Učitajte pdf izvoda iz matične knjige rođenih na međunarodnom obrascu:<span style="font-weight: 700;"></span>
                 </p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-9">izvod</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-10">izvod</a>
                 <p class="u-text u-text-10">Učitajte očitanu ili skeniranu ličnu kartu:</p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-10">lična karta</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-11">lična karta</a>
                 <p class="u-text u-text-black u-text-11">Da li govorite srpski jezik:</p>
                 <p class="u-text u-text-12">Učitajte pdf uverenja o slobodnom bračnom stanju:<span style="font-weight: 700;"></span>
                 </p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-11">UVERENJE</a>
-                <div class="u-form u-form-5">
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-12">UVERENJE</a>
+                <div class="u-form u-form-6">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 31px;" source="custom" name="form-1">
-                    <div class="u-form-group u-form-radiobutton u-form-group-32">
+                    <div class="u-form-group u-form-radiobutton u-form-group-34" name="zenaSrpski" ngDefaultControl [(ngModel)] = "zenaNova.govoriSrpski">
                       <div class="u-form-radio-button-wrapper">
-                        <input type="radio" name="srpskiJezikZ" value="Da">
+                        <input type="radio" name="srpskiJezikZ" value=true>
                         <label class="u-label" for="radiobutton">Da</label>
                         <br>
-                        <input type="radio" name="srpskiJezikZ" value="Ne">
+                        <input type="radio" name="srpskiJezikZ" value=false>
                         <label class="u-label" for="radiobutton">Ne</label>
                         <br>
                       </div>
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-                      <input type="submit" value="submit" class="u-form-control-hidden">
+
                     </div>
                     <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                     <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
@@ -258,82 +267,43 @@
                   </form>
                 </div>
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-6"></div>
-                <button (click)="add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-13">POTVRDI UNETE&nbsp;<br>PODATKE<br>
-                </button>
+                <button (click)="add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-32">POTVRDI UNETE&nbsp;<br>PODATKE<br> </button>
+
               </div>
             </div>
-            <div class="u-align-left u-container-style u-grey-5 u-tab-pane u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
+            <div style='visibility: hidden;' class="u-align-left u-container-style u-grey-5 u-tab-pane u-tab-pane-3" id="muzNijeDrzavljaninTab" role="tabpanel" aria-labelledby="link-tab-2917">
               <div class="u-container-layout u-container-layout-3">
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-7"></div>
                 <h5 class="u-text u-text-grey-90 u-text-13">Lični podaci - ŽENA</h5>
                 <h5 class="u-text u-text-grey-90 u-text-14">Lični podaci - MUŽ</h5>
-                <div class="u-form u-form-6">
-                  <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
-                    <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-30">Ime</label>
-                      <input type="text" placeholder="Unesite ime muške osobe" id="name-7db1" name="imeM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-31">Prezime</label>
-                      <input type="text" placeholder="Unesite prezime muške osobe" id="email-7db1" name="przM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-form-group u-form-group-36">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-32">Datum rođenja</label>
-                      <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-form-email u-form-group u-form-group-37">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-33">Mejl adresa</label>
-                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-form-group u-form-phone u-form-group-38">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-34">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-form-group u-form-group-39">
-                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-35">Broj pasoša</label>
-                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-14">Submit</a>
-                      <input type="submit" value="submit" class="u-form-control-hidden">
-                    </div>
-                    <div class="u-form-send-message u-form-send-success"></div>
-                    <div class="u-form-send-error u-form-send-message"></div>
-                    <input type="hidden" value="" name="recaptchaResponse">
-                  </form>
-                </div>
                 <div class="u-form u-form-7">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                     <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-36">Ime</label>
-                      <input type="text" placeholder="Unesite ime ženske osobe" id="name-7db1" name="imeZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-34">Ime</label>
+                      <input type="text" placeholder="Unesite ime muške osobe" id="name-7db1" name="imeM" ngDefaultControl [(ngModel)] = "muzNovi.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-37">Prezime</label>
-                      <input type="text" placeholder="Unesite trenutno prezime ženske osobe" id="email-7db1" name="przZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-35">Prezime</label>
+                      <input type="text" placeholder="Unesite prezime muške osobe" id="email-7db1" name="przM" ngDefaultControl [(ngModel)] = "muzNovi.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-43">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-38">Datum rođenja</label>
-                      <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-38">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-36">Datum rođenja</label>
+                      <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-44">
-                      <label for="text-6384" class="u-label u-text-grey-90 u-label-39">Broj lične karte</label>
-                      <input type="text" placeholder="Unesite broj lične karte" id="text-6384" name="br_licnekarteZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-email u-form-group u-form-group-39">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-37">Mejl adresa</label>
+                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailM" ngDefaultControl [(ngModel)] = "muzNovi.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-45">
-                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-40">Jedinstveni matični broj građana (JMBG)</label>
-                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
+                    <div class="u-form-group u-form-phone u-form-group-40">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-38">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ngDefaultControl [(ngModel)] = "muzNovi.telefon" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-email u-form-group u-form-group-46">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-41">Mejl adresa</label>
-                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-41">
+                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-39">Broj pasoša</label>
+                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaM" ngDefaultControl [(ngModel)] = "muzNovi.brojPasosa" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-phone u-form-group-47">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-42">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
-                    </div>
-                    <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-15">Submit</a>
+                    <div  class="u-align-left u-form-group u-form-submit">
+                      <a href="#" style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-15">Submit</a>
                       <input type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"></div>
@@ -342,19 +312,58 @@
                   </form>
                 </div>
                 <div class="u-form u-form-8">
+                  <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
+                    <div class="u-form-group u-form-name">
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-40">Ime</label>
+                      <input type="text" placeholder="Unesite ime ženske osobe" id="name-7db1" name="imeZ" ngDefaultControl [(ngModel)] = "zenaNova.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    </div>
+                    <div class="u-form-group">
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-41">Prezime</label>
+                      <input type="text" placeholder="Unesite trenutno prezime ženske osobe" id="email-7db1" name="przZ" ngDefaultControl [(ngModel)] = "zenaNova.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    </div>
+                    <div class="u-form-group u-form-group-45">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-42">Datum rođenja</label>
+                      <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    </div>
+                    <div class="u-form-group u-form-group-46">
+                      <label for="text-6384" class="u-label u-text-grey-90 u-label-43">Broj lične karte</label>
+                      <input type="text" placeholder="Unesite broj lične karte" id="text-6384" name="br_licnekarteZ" ngDefaultControl [(ngModel)] = "zenaNova.brLicnekarte" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    </div>
+                    <div class="u-form-group u-form-group-47">
+                      <label for="text-8cca" class="u-label u-text-grey-90 u-label-44">Jedinstveni matični broj građana (JMBG)</label>
+                      <input type="text" placeholder="Unesite JMBG" id="text-8cca" name="jmbgZ" ngDefaultControl [(ngModel)] = "zenaNova.jmbg"  class="u-border-1 u-border-black u-input u-input-rectangle u-white" maxlength="13">
+                    </div>
+                    <div class="u-form-email u-form-group u-form-group-48">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-45">Mejl adresa</label>
+                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ" ngDefaultControl [(ngModel)] = "zenaNova.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    </div>
+                    <div class="u-form-group u-form-phone u-form-group-49">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-46">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ngDefaultControl [(ngModel)] = "zenaNova.telefon"  placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    </div>
+                    <div  class="u-align-left u-form-group u-form-submit">
+                      <a href="#" style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-16">Submit</a>
+                      <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success"></div>
+                    <div class="u-form-send-error u-form-send-message"></div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                  </form>
+                </div>
+                <div class="u-form u-form-9">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 31px;" source="custom" name="form-1">
-                    <div class="u-form-group u-form-radiobutton u-form-group-49">
+                    <div class="u-form-group u-form-radiobutton u-form-group-51" name="muzSrpski" ngDefaultControl [(ngModel)] = "muzNovi.govoriSrpski" >
                       <div class="u-form-radio-button-wrapper">
-                        <input type="radio" name="srpskiJezikM" value="Da">
+                        <input type="radio" name="srpskiJezikM" value=true>
                         <label class="u-label" for="radiobutton">Da</label>
                         <br>
-                        <input type="radio" name="srpskiJezikM" value="Ne">
+                        <input type="radio" name="srpskiJezikM" value=false>
                         <label class="u-label" for="radiobutton">Ne</label>
                         <br>
                       </div>
                     </div>
-                    <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+                    <div style="visibility: hidden;" class="u-align-left u-form-group u-form-submit">
+                      <a href="#" style="visibility: hidden;" class="u-btn u-btn-submit u-button-style">Submit</a>
                       <input type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
@@ -364,52 +373,52 @@
                 </div>
                 <p class="u-text u-text-black u-text-15">Da li govorite srpski jezik:</p>
                 <p class="u-text u-text-16">Učitajte skeniranu prvu stranicu pasoša:</p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-17">Pasoš</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-18">Pasoš</a>
                 <p class="u-text u-text-17">Učitajte pdf izvoda iz matične knjige rođenih na međunarodnom obrascu:<span style="font-weight: 700;"></span>
                 </p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-18">izvod</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-19">izvod</a>
                 <div class="u-border-3 u-border-grey-dark-1 u-line u-line-vertical u-line-8"></div>
                 <p class="u-text u-text-18">Učitajte pdf uverenja o slobodnom bračnom stanju:<span style="font-weight: 700;"></span>
                 </p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-19">UVERENJE</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-20">UVERENJE</a>
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-9"></div>
-                <button (click)="add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-20">POTVRDI UNETE&nbsp;<br>PODATKE<br>
-                </button>
+                <button (click)="add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-32">POTVRDI UNETE&nbsp;<br>PODATKE<br> </button>
+
               </div>
             </div>
-            <div class="u-align-left u-container-style u-grey-5 u-tab-pane u-tab-pane-4" id="link-tab-6e5a" role="tabpanel" aria-labelledby="tab-6e5a">
+            <div style='visibility: hidden;' class="u-align-left u-container-style u-grey-5 u-tab-pane u-tab-pane-4" id="nikoNijeDrzavljaninTab" role="tabpanel" aria-labelledby="tab-6e5a">
               <div class="u-container-layout u-container-layout-4">
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-10"></div>
                 <h5 class="u-text u-text-grey-90 u-text-19">Lični podaci - ŽENA</h5>
                 <h5 class="u-text u-text-grey-90 u-text-20">Lični podaci - MUŽ</h5>
-                <div class="u-form u-form-9">
+                <div class="u-form u-form-10">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                     <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-45">Ime</label>
-                      <input type="text" placeholder="Unesite ime muške osobe" id="name-7db1" name="imeM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-49">Ime</label>
+                      <input type="text" placeholder="Unesite ime muške osobe" id="name-7db1" name="imeM"  ngDefaultControl [(ngModel)] = "muzNovi.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-46">Prezime</label>
-                      <input type="text" placeholder="Unesite prezime muške osobe" id="email-7db1" name="przM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-50">Prezime</label>
+                      <input type="text" placeholder="Unesite prezime muške osobe" id="email-7db1" name="przM" ngDefaultControl [(ngModel)] = "muzNovi.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-53">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-47">Datum rođenja</label>
+                    <div class="u-form-group u-form-group-55">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-51">Datum rođenja</label>
                       <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-email u-form-group u-form-group-54">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-48">Mejl adresa</label>
-                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-email u-form-group u-form-group-56">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-52">Mejl adresa</label>
+                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailM" ngDefaultControl [(ngModel)] = "muzNovi.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-phone u-form-group-55">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-49">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-phone u-form-group-57">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-53">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ngDefaultControl [(ngModel)] = "muzNovi.telefon" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-56">
-                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-50">Broj pasoša</label>
-                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaM" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-58">
+                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-54">Broj pasoša</label>
+                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaM" ngDefaultControl [(ngModel)] = "muzNovi.brojPasosa" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-21">Submit</a>
+                      <a href="#" style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-22">Submit</a>
                       <input type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"></div>
@@ -418,34 +427,34 @@
                   </form>
                 </div>
                 <div class="u-border-3 u-border-grey-dark-1 u-line u-line-vertical u-line-11"></div>
-                <div class="u-form u-form-10">
+                <div class="u-form u-form-11">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 10px;" source="custom" name="form">
                     <div class="u-form-group u-form-name">
-                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-51">Ime</label>
-                      <input type="text" placeholder="Unesite ime ženske osobe" id="name-7db1" name="imeZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="name-7db1" class="u-label u-text-grey-90 u-label-55">Ime</label>
+                      <input type="text" placeholder="Unesite ime ženske osobe" id="name-7db1" name="imeZ" ngDefaultControl [(ngModel)] = "zenaNova.ime" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-form-group">
-                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-52">Prezime</label>
-                      <input type="text" placeholder="Unesite trenutno prezime ženske osobe" id="email-7db1" name="przZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                      <label for="email-7db1" class="u-label u-text-grey-90 u-label-56">Prezime</label>
+                      <input type="text" placeholder="Unesite trenutno prezime ženske osobe" id="email-7db1" name="przZ" ngDefaultControl [(ngModel)] = "zenaNova.prz" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-60">
-                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-53">Datum rođenja</label>
+                    <div class="u-form-group u-form-group-62">
+                      <label for="text-dd5e" class="u-label u-text-grey-90 u-label-57">Datum rođenja</label>
                       <input type="text" placeholder="Unesite datum rođenja" id="text-dd5e" name="datumRodjenjaZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-email u-form-group u-form-group-61">
-                      <label for="email-921d" class="u-label u-text-grey-90 u-label-54">Mejl adresa</label>
-                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-email u-form-group u-form-group-63">
+                      <label for="email-921d" class="u-label u-text-grey-90 u-label-58">Mejl adresa</label>
+                      <input type="email" placeholder="Unesite imejl adresu" id="email-921d" name="emailZ" ngDefaultControl [(ngModel)] = "zenaNova.email" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-phone u-form-group-62">
-                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-55">Broj telefona</label>
-                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-phone u-form-group-64">
+                      <label for="phone-e707" class="u-label u-text-grey-90 u-label-59">Broj telefona</label>
+                      <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" ngDefaultControl [(ngModel)] = "zenaNova.telefon" placeholder="Unesite broj telefona (npr. +38155552675)" id="phone-e707" name="telefonZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
-                    <div class="u-form-group u-form-group-63">
-                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-56">Broj pasoša</label>
-                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaZ" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
+                    <div class="u-form-group u-form-group-65">
+                      <label for="text-fb50" class="u-label u-text-grey-90 u-label-60">Broj pasoša</label>
+                      <input type="text" placeholder="Unesite broj pasoša" id="text-fb50" name="broj_pasosaZ" ngDefaultControl [(ngModel)] = "zenaNova.brojPasosa" class="u-border-1 u-border-black u-input u-input-rectangle u-white">
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-22">Submit</a>
+                      <a href="#" style="visibility: hidden;" class="u-border-2 u-border-white u-btn u-btn-submit u-button-style u-grey-80 u-hover-white u-btn-23">Submit</a>
                       <input type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"></div>
@@ -455,57 +464,57 @@
                 </div>
                 <p class="u-text u-text-black u-text-21">Da li govorite srpski jezik:</p>
                 <p class="u-text u-text-22">Učitajte skeniranu prvu stranicu pasoša:</p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-23">Pasoš</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-24">Pasoš</a>
                 <p class="u-text u-text-23">Učitajte pdf izvoda iz matične knjige rođenih na međunarodnom obrascu:<span style="font-weight: 700;"></span>
                 </p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-24">izvod</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-25">izvod</a>
                 <p class="u-text u-text-24">Učitajte pdf uverenja o slobodnom bračnom stanju:<span style="font-weight: 700;"></span>
                 </p>
-                <div class="u-form u-form-11">
+                <div class="u-form u-form-12">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 31px;" source="custom" name="form-1">
-                    <div class="u-form-group u-form-radiobutton u-form-group-65">
+                    <div class="u-form-group u-form-radiobutton u-form-group-67" name="muzSrpski2" ngDefaultControl [(ngModel)] = "muzNovi.govoriSrpski">
                       <div class="u-form-radio-button-wrapper">
-                        <input type="radio" name="srpskiJezikM" value="Da">
+                        <input type="radio" name="srpskiJezikM" value=true>
                         <label class="u-label" for="radiobutton">Da</label>
                         <br>
-                        <input type="radio" name="srpskiJezikM" value="Ne">
+                        <input type="radio" name="srpskiJezikM" value=false>
                         <label class="u-label" for="radiobutton">Ne</label>
                         <br>
                       </div>
                     </div>
-                    <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-                      <input type="submit" value="submit" class="u-form-control-hidden">
+                    <div style="visibility: hidden;" class="u-align-left u-form-group u-form-submit">
+                      <a href="#" style="visibility: hidden;" class="u-btn u-btn-submit u-button-style">Submit</a>
+                      <input  type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                     <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
                     <input type="hidden" value="" name="recaptchaResponse">
                   </form>
                 </div>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-26">UVERENJE</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-27">UVERENJE</a>
                 <p class="u-text u-text-25">Učitajte skeniranu prvu stranicu pasoša:</p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-27">Pasoš</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-28">Pasoš</a>
                 <p class="u-text u-text-26">Učitajte pdf izvoda iz matične knjige rođenih na međunarodnom obrascu:<span style="font-weight: 700;"></span>
                 </p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-28">izvod</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-29">izvod</a>
                 <p class="u-text u-text-27">Učitajte pdf uverenja o slobodnom bračnom stanju:<span style="font-weight: 700;"></span>
                 </p>
-                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-29">UVERENJE</a>
+                <a href="https://nicepage.com/c/video-website-mockup" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-30">UVERENJE</a>
                 <p class="u-text u-text-black u-text-28">Da li govorite srpski jezik:</p>
-                <div class="u-form u-form-12">
+                <div class="u-form u-form-13">
                   <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 31px;" source="custom" name="form-1">
-                    <div class="u-form-group u-form-radiobutton u-form-group-67">
+                    <div class="u-form-group u-form-radiobutton u-form-group-69" name="zenaSrpski2" ngDefaultControl [(ngModel)] = "zenaNova.govoriSrpski"> 
                       <div class="u-form-radio-button-wrapper">
-                        <input type="radio" name="srpskiJezikZ" value="Da">
+                        <input type="radio" name="srpskiJezikZ" value=true>
                         <label class="u-label" for="radiobutton">Da</label>
                         <br>
-                        <input type="radio" name="srpskiJezikZ" value="Ne">
+                        <input type="radio" name="srpskiJezikZ" value=false>
                         <label class="u-label" for="radiobutton">Ne</label>
                         <br>
                       </div>
                     </div>
-                    <div class="u-align-left u-form-group u-form-submit">
-                      <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+                    <div style="visibility: hidden;" class="u-align-left u-form-group u-form-submit">
+                      <a href="#" style="visibility: hidden;" class="u-btn u-btn-submit u-button-style">Submit</a>
                       <input type="submit" value="submit" class="u-form-control-hidden">
                     </div>
                     <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
@@ -514,23 +523,13 @@
                   </form>
                 </div>
                 <div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-12"></div>
-                <button (click) = "add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-31">POTVRDI UNETE&nbsp;<br>PODATKE<br>
-                </button>
+                <button (click)="add()" class="u-border-none u-btn u-button-style u-hover-palette-5-light-1 u-palette-2-dark-3 u-text-hover-grey-90 u-btn-32">POTVRDI UNETE&nbsp;<br>PODATKE<br> </button>
+                
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
-    
-    
-    
-    <section class="u-backlink u-clearfix u-grey-80">
-      
-      <p class="u-text">
-        <span>Oktobar, 2021.</span>
-      </p>
-      
-    </section>
+
   </body>
 </html>

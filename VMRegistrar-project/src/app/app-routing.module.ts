@@ -8,10 +8,8 @@ import { ZahtevComponent } from './components/zahtev/zahtev.component';
 const routes: Routes = [
   {path: 'pocetna', component: OpstinaComponent},
   {path: 'supruznici', component: SupruzniciComponent},
-  {path: 'zahtev', component: ZahtevComponent}
- 
-  //{path: '#tab-eafc', component: SupruzniciComponent},
- // {path: '', redirectTo: '/supruznici', pathMatch: 'full'}
+  {path: 'zahtev', component: ZahtevComponent},
+  {path: '', redirectTo: '/pocetna', pathMatch: 'full'}
 
 
 ];

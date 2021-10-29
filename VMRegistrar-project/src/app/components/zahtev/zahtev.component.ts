@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Termin } from 'src/app/models/termin';
 import { Zahtev } from 'src/app/models/zahtev';
@@ -11,7 +11,7 @@ import { ZahtevService } from 'src/app/services/zahtev.service';
   templateUrl: './zahtev.component.html',
   styleUrls: ['./zahtev.component.css', './nicepage.css']
 })
-export class ZahtevComponent implements OnInit {
+export class ZahtevComponent implements OnInit, OnChanges {
 
   public terminIzmena = new Termin();
   public zahtevNovi = new Zahtev();
@@ -30,8 +30,12 @@ export class ZahtevComponent implements OnInit {
 
   ngOnInit(): void {
     this.terminIzmena = this.stateService.termin;
+    this.stateService.termin = this.terminIzmena;
   }
-
+  ngOnChanges(): void {
+    this.terminIzmena = this.stateService.termin;
+    
+  }
   proveraRaspolozivosti() {
     this.terminIzmena.datum = this.dan + '.' + this.mesec + '.' + this.godina + '.';
     // Provera da li je unet datum posle danasnjeg dana 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnChanges, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Ispis } from 'src/app/models/ispis.model';
 import { Muz } from 'src/app/models/muz';
@@ -16,7 +16,7 @@ import { ZenaService } from 'src/app/services/zena.service';
   templateUrl: './supruznici.component.html',
   styleUrls: ['./supruznici.component.css', './nicepage.css']
 })
-export class SupruzniciComponent implements OnInit {
+export class SupruzniciComponent implements OnInit, OnChanges {
 
   public muzNovi = new Muz();
   public zenaNova = new Zena();
@@ -25,6 +25,8 @@ export class SupruzniciComponent implements OnInit {
   ispis!: Ispis;
   greska: string = "";
   potvrda: string = "";
+
+  izabranRadioButton: string = "";
 
   terminPreuzet = new Termin();
   
@@ -38,19 +40,66 @@ export class SupruzniciComponent implements OnInit {
     this.stateService.termin = this.terminPreuzet;
   }
 
+  ngOnChanges(): void {
+    this.terminPreuzet = this.stateService.termin;
+    this.stateService.termin = this.terminPreuzet;
+  }
   add() {
    // this.jmbgProvera(new Unos(this.zenaNova.ime, this.zenaNova.prz, this.zenaNova.jmbg));
    // this.jmbgProvera(new Unos(this.muzNovi.ime, this.muzNovi.prz, this.muzNovi.jmbg));
     
-    this.muzService.addMuz(this.muzNovi).subscribe(()  => {
-      console.log("proba Muz");
-      this.zenaService.addZena(this.zenaNova).subscribe(()  => {
-        console.log("proba Zena");
+    this.muzService.addMuz(this.muzNovi).subscribe(data  => {
+      console.log("proba Muz" + data);
+      this.zenaService.addZena(this.zenaNova).subscribe(dataZena  => {
+        console.log("proba Zena" + dataZena);
       })
     })
     
     this.router.navigate(['/zahtev']);
     
+  }
+
+
+  hideDiv () {
+    let oba = document.getElementById('supruzniciDrzavljaniTab');
+    let zenaD = document.getElementById('zenaNijeDrzavljaninTab');
+    let muzD = document.getElementById('muzNijeDrzavljaninTab');
+    let niko = document.getElementById('nikoNijeDrzavljaninTab');
+
+    let radioGroup = document.getElementById('izabranTabId') as HTMLInputElement;
+    let button = document.getElementById('hideDiv') as HTMLInputElement;
+    
+    if (radioGroup != null && button!= null){
+      button.disabled = true;
+      radioGroup.disabled=true;
+    }
+
+    if (oba != null && zenaD != null && muzD != null && niko != null){
+     if(this.izabranRadioButton == 'supruzniciDrzavljani') {
+        oba.style.visibility = 'visible';
+        zenaD.style.visibility='hidden';
+        muzD.style.visibility='hidden';
+        niko.style.visibility='hidden';
+     } else if(this.izabranRadioButton == 'zenaNijeDrzavljanin') {
+        zenaD.style.visibility = 'visible';
+        zenaD.style.marginTop = "-895px";
+        oba.style.visibility = 'hidden';
+        muzD.style.visibility='hidden';
+        niko.style.visibility='hidden';
+    }else if(this.izabranRadioButton == 'muzNijeDrzavljanin') {
+        muzD.style.visibility = 'visible';
+        muzD.style.marginTop = "-1950px";
+        oba.style.visibility = 'hidden';
+        zenaD.style.visibility='hidden';
+        niko.style.visibility='hidden';
+    }else if(this.izabranRadioButton == 'nikoNijeDrzavljanin') {
+        niko.style.visibility = 'visible';
+        niko.style.marginTop = "-3200px";
+        muzD.style.visibility = 'hidden';
+        oba.style.visibility = 'hidden';
+        zenaD.style.visibility='hidden';
+    }
+  }
   }
 
   jmbgProvera(Unos: Unos) {
