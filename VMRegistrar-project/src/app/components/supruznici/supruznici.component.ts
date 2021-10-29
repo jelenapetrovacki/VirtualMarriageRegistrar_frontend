@@ -18,6 +18,7 @@ import { ZenaService } from 'src/app/services/zena.service';
 })
 export class SupruzniciComponent implements OnInit, OnChanges {
 
+  //Dejanina proba komita
   public muzNovi = new Muz();
   public zenaNova = new Zena();
 
