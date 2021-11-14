@@ -51,15 +51,16 @@ export class SupruzniciComponent implements OnInit, OnChanges {
   ngOnChanges(): void {
     this.terminPreuzet = this.stateService.termin;
     this.stateService.termin = this.terminPreuzet;
+    this.stateService.zahtev = this.zahtevNovi;
   }
   add() {
    // this.jmbgProvera(new Unos(this.zenaNova.ime, this.zenaNova.prz, this.zenaNova.jmbg));
    // this.jmbgProvera(new Unos(this.muzNovi.ime, this.muzNovi.prz, this.muzNovi.jmbg));
-    
+   
     this.muzService.addMuz(this.muzNovi).subscribe(data  => {
-      console.log("proba Muz" + data);
+      
       this.zenaService.addZena(this.zenaNova).subscribe(dataZena  => {
-        console.log("proba Zena" + dataZena);
+        
       })
     })
     
@@ -85,11 +86,13 @@ export class SupruzniciComponent implements OnInit, OnChanges {
     }
     this.zahtevNovi.straniDrzavljaninMuz = this.muzStranac;
     this.zahtevNovi.straniDrzavljaninZena = this.zenaStranac;
+    //this.zahtevNovi.izlazMaticara = false;
     let idTermina = this.terminPreuzet.id;
     this.zahtevNovi.termin = this.terminPreuzet;
 
     this.zahtevService.addZahtev(this.zahtevNovi).subscribe(data => {
-      console.log(this.zahtevNovi);
+      this.stateService.zahtev = data;
+      console.log(data);
     })
     let oba = document.getElementById('supruzniciDrzavljaniTab');
     let zenaD = document.getElementById('zenaNijeDrzavljaninTab');

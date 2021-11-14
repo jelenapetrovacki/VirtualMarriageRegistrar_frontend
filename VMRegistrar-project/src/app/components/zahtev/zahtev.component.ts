@@ -14,7 +14,7 @@ import { ZahtevService } from 'src/app/services/zahtev.service';
 export class ZahtevComponent implements OnInit, OnChanges {
 
   public terminIzmena = new Termin();
-  public zahtevNovi = new Zahtev();
+  public zahtevPreuzet = new Zahtev();
   public dan!: string;
   public mesec!: string;
   public godina!: string;
@@ -29,11 +29,15 @@ export class ZahtevComponent implements OnInit, OnChanges {
     ) { }
 
   ngOnInit(): void {
+    this.zahtevPreuzet.izlazMaticara = false; 
     this.terminIzmena = this.stateService.termin;
     this.stateService.termin = this.terminIzmena;
+    this.zahtevPreuzet = this.stateService.zahtev;
+
   }
   ngOnChanges(): void {
     this.terminIzmena = this.stateService.termin;
+    //this.zahtevPreuzet = this.stateService.zahtev;
     
   }
   proveraRaspolozivosti() {
@@ -47,25 +51,25 @@ export class ZahtevComponent implements OnInit, OnChanges {
         this.poruka = "Greška! Uneli ste neispravan datum!";
       }else {
         this.poruka = "";
-        
+        (<HTMLInputElement> document.getElementById("btnPotvrdi")).disabled = false;
         
       }
       
     }
     else{
       this.poruka = "";
+      (<HTMLInputElement> document.getElementById("btnPotvrdi")).disabled = false;
+
     }
-    console.log(this.godina + d.getFullYear());
-    console.log(this.mesec + d.getMonth());
-    console.log(this.dan + d.getDate());
-  console.log(this.poruka);
+
   }
   
   add() {
     
-    
-    this.zahtevService.addZahtev(this.zahtevNovi).subscribe(()  => {
-      console.log("proba");
+    console.log(this.zahtevPreuzet.izlazMaticara);
+
+    this.zahtevService.updateZahtev(this.zahtevPreuzet).subscribe(()  => {
+      console.log(this.zahtevPreuzet);
     })
 
     this.terminService.updateTermin(this.terminIzmena).subscribe(data => {
