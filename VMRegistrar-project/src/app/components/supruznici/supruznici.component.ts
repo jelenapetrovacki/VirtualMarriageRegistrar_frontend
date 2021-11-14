@@ -4,9 +4,11 @@ import { Ispis } from 'src/app/models/ispis.model';
 import { Muz } from 'src/app/models/muz';
 import { Termin } from 'src/app/models/termin';
 import { Unos } from 'src/app/models/unos.model';
+import { Zahtev } from 'src/app/models/zahtev';
 import { Zena } from 'src/app/models/zena';
 import { MuzService } from 'src/app/services/muz.service';
 import { StateService } from 'src/app/services/state.service';
+import { ZahtevService } from 'src/app/services/zahtev.service';
 import { ZenaService } from 'src/app/services/zena.service';
 
 
@@ -21,11 +23,15 @@ export class SupruzniciComponent implements OnInit, OnChanges {
   //Dejanina proba komita
   public muzNovi = new Muz();
   public zenaNova = new Zena();
+  public zahtevNovi = new Zahtev();
 
   //Unos!: Unos;
   ispis!: Ispis;
   greska: string = "";
   potvrda: string = "";
+  odabraniRadio!: string;
+  zenaStranac!: boolean;
+  muzStranac!: boolean;
 
   izabranRadioButton: string = "";
 
@@ -34,7 +40,8 @@ export class SupruzniciComponent implements OnInit, OnChanges {
   constructor(public muzService: MuzService,
     public zenaService: ZenaService,
     public router: Router,
-    private stateService: StateService) { }
+    private stateService: StateService,
+    private zahtevService: ZahtevService) { }
 
   ngOnInit(): void {
     this.terminPreuzet = this.stateService.termin;
@@ -62,6 +69,28 @@ export class SupruzniciComponent implements OnInit, OnChanges {
 
 
   hideDiv () {
+    console.log(this.odabraniRadio);
+    if (this.odabraniRadio == "supruzniciDrzavljani") {
+        this.zenaStranac=false;
+        this.muzStranac=false;
+    } else if (this.odabraniRadio == "zenaNijeDrzavljanin") {
+        this.zenaStranac=true;
+        this.muzStranac=false;
+    } else if (this.odabraniRadio == "muzNijeDrzavljanin") {
+      this.zenaStranac=false;
+      this.muzStranac=true;
+    } else {
+      this.zenaStranac=true;
+      this.muzStranac=true;
+    }
+    this.zahtevNovi.straniDrzavljaninMuz = this.muzStranac;
+    this.zahtevNovi.straniDrzavljaninZena = this.zenaStranac;
+    let idTermina = this.terminPreuzet.id;
+    this.zahtevNovi.termin = this.terminPreuzet;
+
+    this.zahtevService.addZahtev(this.zahtevNovi).subscribe(data => {
+      console.log(this.zahtevNovi);
+    })
     let oba = document.getElementById('supruzniciDrzavljaniTab');
     let zenaD = document.getElementById('zenaNijeDrzavljaninTab');
     let muzD = document.getElementById('muzNijeDrzavljaninTab');

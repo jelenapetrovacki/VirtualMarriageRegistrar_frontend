@@ -44,16 +44,16 @@
             <input type="hidden" id="pageId" name="pageId" value="1858212703">
             <div class="u-form-group u-form-radiobutton u-form-group-1">
               <div class="u-form-radio-button-wrapper" id="izabranTabId" name="izabranTab" ngDefaultControl [(ngModel)] = "izabranRadioButton">
-                <input type="radio"  name="izabranTab" id="supruzniciDrzavljani" value="supruzniciDrzavljani">
+                <input type="radio"  name="izabranTab" id="supruzniciDrzavljani"  ngDefaultControl [(ngModel)] = "odabraniRadio" value="supruzniciDrzavljani">
                 <label class="u-label u-text-grey-90 u-label-1" for="radiobutton"> Oba supružnika su državljani Republike Srbije</label>
                 <br>
-                <input type="radio" name="izabranTab" id="zenaNijeDrzavljanin" value="zenaNijeDrzavljanin">
+                <input type="radio" name="izabranTab" id="zenaNijeDrzavljanin" ngDefaultControl [(ngModel)] = "odabraniRadio" value="zenaNijeDrzavljanin">
                 <label class="u-label u-text-grey-90 u-label-2" for="radiobutton"> Žena nije državljanin Republike Srbije</label>
                 <br>
-                <input type="radio" name="izabranTab" id="muzNijeDrzavljanin" value="muzNijeDrzavljanin">
+                <input type="radio" name="izabranTab" id="muzNijeDrzavljanin" ngDefaultControl [(ngModel)] = "odabraniRadio" value="muzNijeDrzavljanin">
                 <label class="u-label u-text-grey-90 u-label-3" for="radiobutton"> Muž nije državljanin Republike Srbije</label>
                 <br>
-                <input type="radio" name="izabranTab" id="nikoNijeDrzavljanin" value="nikoNijeDrzavljanin">
+                <input type="radio" name="izabranTab" id="nikoNijeDrzavljanin" ngDefaultControl [(ngModel)] = "odabraniRadio" value="nikoNijeDrzavljanin">
                 <label class="u-label u-text-grey-90 u-label-4" for="radiobutton"> Niko od supružnika nije državljanin Republike Srbije</label>
                 <br>
               </div>
