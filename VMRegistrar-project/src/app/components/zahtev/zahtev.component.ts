@@ -75,6 +75,8 @@ export class ZahtevComponent implements OnInit, OnChanges {
     this.terminService.updateTermin(this.terminIzmena).subscribe(data => {
       console.log(this.terminIzmena);
     })
+
+    this.router.navigate(['/zavrsnaStranica']);
   }
 
 }
